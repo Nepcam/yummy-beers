@@ -19,7 +19,7 @@ export const deleteFromCart = (id) => {
 
 export const updateCart = (cart) => {
   return {
-    type: UPDATE_CART,
+    type: 'UPDATE_CART',
     cart
   }
 }
