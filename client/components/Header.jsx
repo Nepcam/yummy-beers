@@ -11,3 +11,5 @@ const Header = () => {
 }
 
 export default Header
+
+// <span> = is used for grouping and applying styles to inline elements

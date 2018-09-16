@@ -70,6 +70,7 @@ class Cart extends React.Component {
     )
   }
 }
+// <th> tag defines a header cell in an HTML table
 
 const mapStateToProps = (state) => {
   return {
