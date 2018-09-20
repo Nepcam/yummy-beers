@@ -1,23 +1,43 @@
 import React from 'react'
-import {connect} from 'react-redux'
+//import {connect} from 'react-redux'
 
 import Cart from './Cart'
 import Header from './Header'
-import BeerList from './BeerList'
+//import BeerList from './BeerList'
+import Listing from 'Listing'
 
-const App = (props) => {
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+
+    }
+  }
+  render() {
     return (
       <div className='app'>
-        <Header />
-        {props.currentPage === 'listing' ? <BeerList /> : <Cart />}
+      <Header />
+      <Listing />
+      <Cart />
       </div>
     )
   }
+}
+
+// const App = (props) => {
+//     return (
+//       <div className='app'>
+//         <Header />
+//         {props.currentPage === 'listing' ? <BeerList /> : <Cart />}
+//       </div>
+//     )
+//   }
   
-  const mapStateToProps = (state) => {
-    return {
-      currentPage: state.currentPage
-    }
-  }
+//   const mapStateToProps = (state) => {
+//     return {
+//       currentPage: state.currentPage
+//     }
+//   }
   
-  export default connect(mapStateToProps)(App)
+  export default App
