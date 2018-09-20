@@ -1,8 +1,7 @@
 import React from 'react'
-
 import beerData from '../../data/beers'
 
-const CartItem = (props) => {
+const CartListItem = (props) => {
   const name = getNameFromId(props.item.id)
   return (
     <tr> 
