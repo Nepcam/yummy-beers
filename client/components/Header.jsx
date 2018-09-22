@@ -12,23 +12,10 @@ class Header extends React.Component {
   render() {
     return (
       <div className='header'>
-        <h1><span class="fa fa-beer"></span>Yummy As Beers <span class="fa fa-beer"></span></h1>
+        <h1>Yummy As Beers</h1>
       </div>
     )
   }
 }
 
-
-// const Header = () => {
-//   return (
-//     <h1>
-//       <span className='fa fa-beer' />
-//       {' '}Sweet As Beers{' '}
-//       <span className='fa fa-beer' />
-//     </h1>
-//   )
-// }
-
 export default Header
-
-// <span> = is used for grouping and applying styles to inline elements

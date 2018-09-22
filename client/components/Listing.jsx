@@ -11,7 +11,7 @@ class Listing extends React.Component {
     render() {
         return (
             <div className='listing'>
-                <p className="welcome">Welcome to Cams beers.</p>
+                <p className="welcome">Welcome to Yummy as Beers.</p>
 
                 <BeerList beers={beerData.beers}/>
             </div>

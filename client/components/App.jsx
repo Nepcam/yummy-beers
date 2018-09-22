@@ -1,7 +1,6 @@
 import React from 'react'
 import Header from './Header'
 import Listing from './Listing'
-import Cart from './Cart'
 
 // This might need to be turned into a stateful (class-based) component
 class App extends React.Component {
