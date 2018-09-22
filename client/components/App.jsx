@@ -3,8 +3,10 @@ import React from 'react'
 
 import Cart from './Cart'
 import Header from './Header'
-//import BeerList from './BeerList'
-import Listing from 'Listing'
+import BeerList from './BeerList'
+//import Listing from 'Listing'
+import BeerListItem from './BeerListItem'
+import Listing from './Listing';
 
 class App extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ class App extends React.Component {
     return (
       <div className='app'>
       <Header />
-      <Listing />
+      
       <Cart />
       </div>
     )
