@@ -1,4 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
+//import Cart from 'Cart'
+
 
 const BeerListItem = (props) => {
     const beer = props.beer
@@ -9,14 +12,14 @@ const BeerListItem = (props) => {
             <p>
                 <span className='country'>{beer.country}</span>
                 <span className='abv'>{beer.abv} abv</span>
-                <a href='#'
+                <a href='Cart'
                     className='cart-link'
                     onClick={() => props.addToCart(beer.id)}>Add to cart</a> 
             </p>
         </div>
     )
 }
-// Error in line 14 
+// Error in line 17 - something to do with the addToCart function
 
 
 export default BeerListItem

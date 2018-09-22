@@ -1,6 +1,6 @@
 import React from 'react'
 import {connect} from 'react-redux'
-
+import beerData from '../../data/beers'
 import CartItem from './CartItem'
 
 import {

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
 import beerData from '../../data/beers'
 
 const CartItem = (props) => {
