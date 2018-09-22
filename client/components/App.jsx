@@ -1,4 +1,7 @@
 import React from 'react'
+import {connect} from 'react-redux'
+
+import Cart from './Cart'
 import Header from './Header'
 import Listing from './Listing'
 

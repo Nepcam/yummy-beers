@@ -11,10 +11,12 @@ const BeerListItem = (props) => {
                 <span className='abv'>{beer.abv} abv</span>
                 <a href='#'
                     className='cart-link'
-                    onClick={() => props.addToCart(beer.id)}>Add to cart</a>
+                    onClick={() => props.addToCart(beer.id)}>Add to cart</a> 
             </p>
         </div>
     )
 }
+// Error in line 14 
+
 
 export default BeerListItem
