@@ -1,10 +1,10 @@
 import React from 'react'
 import beerData from '../../data/beers'
 
-const CartItem = (props) => {
+const CartListItem = (props) => {
   const name = getNameFromId(props.item.id)
   return (
-    <tr> 
+    <tr>
       <td>{name}</td>
       <td>
         <input
@@ -24,6 +24,4 @@ function getNameFromId (id) {
   return beer.name
 }
 
-export default CartItem
-
-// <tr> = table row element & <td> = create data cell
+export default CartListItem
