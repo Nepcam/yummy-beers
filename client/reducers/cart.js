@@ -16,11 +16,11 @@ import {
     }
   }
   
-  /*
-   * Returns a new cart array.
-   * If the id already exists, the quantity will be incremented.
-   * If the id doesn't exists, it will be added with a quantity of 1.
-   */
+  // 
+  //   Returns a new cart array.
+  //   If the id already exists, the quantity will be incremented.
+  //   If the id doesn't exists, it will be added with a quantity of 1.
+  //  
   function getNewCart (cart, id) {
     let exists = false
     const newCart = cart.map(item => {
