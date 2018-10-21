@@ -1,8 +1,7 @@
 import React from 'react'
-import {connect} from 'react-redux'
 import beerData from '../../data/beers'
 
-const CartItem = (props) => {
+const CartListItem = (props) => {
   const name = getNameFromId(props.item.id)
   return (
     <tr>
@@ -25,4 +24,4 @@ function getNameFromId (id) {
   return beer.name
 }
 
-export default CartItem
+export default CartListItem
