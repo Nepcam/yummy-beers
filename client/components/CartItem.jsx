@@ -1,7 +1,8 @@
 import React from 'react'
+
 import beerData from '../../data/beers'
 
-const CartListItem = (props) => {
+const CartItem = (props) => {
   const name = getNameFromId(props.item.id)
   return (
     <tr>
@@ -24,4 +25,4 @@ function getNameFromId (id) {
   return beer.name
 }
 
-export default CartListItem
+export default CartItem
