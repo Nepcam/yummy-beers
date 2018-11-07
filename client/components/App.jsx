@@ -3,25 +3,22 @@ import {connect} from 'react-redux'
 
 import Cart from './Cart'
 import Header from './Header'
-import Listing from './Listing'
+import BeerList from './BeerList'
 
 // This might need to be turned into a stateful (class-based) component
-class App extends React.Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-
-    }
-  }
-  render() {
-    return (
-      <div className='app'>
+const App =(props) => {
+  return (
+    <div className='app'>
       <Header />
-      <Listing />
-      </div>
-    )
+      {props.currentPage === 'beerlist' ? <BeerList /> : <Cart />}
+    </div>
+  )
+}
+
+const mapStateToProps = (state) => {
+  return {
+    currentPage: state.currentPage
   }
 }
 
-export default App
+export default connect(mapStateToProps)(App)
